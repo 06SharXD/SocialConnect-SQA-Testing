@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f3ff">
+  <title>Join SocialConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-story story-register">
+      <a class="brand brand-light" href="/"><span class="brand-mark">✳</span> social<span>connect</span></a>
+      <div class="story-copy">
+        <span class="eyebrow"><span class="live-dot"></span> THERE'S ROOM FOR YOU</span>
+        <h1>Bring your<br>whole <span>self.</span></h1>
+        <p>Find your people, trade inspiration, and make everyday moments a little more meaningful.</p>
+        <div class="join-note"><span class="join-icon">✦</span><span><strong>Your community is waiting.</strong><br>Come say hello.</span></div>
+      </div>
+      <div class="story-footer">A brighter kind of social.</div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-mobile-brand"><a class="brand" href="/"><span class="brand-mark">✳</span> social<span>connect</span></a></div>
+      <div class="auth-card">
+        <span class="eyebrow eyebrow-purple">GET STARTED</span>
+        <h2>Make yourself at home.</h2>
+        <p class="auth-intro">Create your account in just a moment.</p>
+        <form id="registerForm" class="form-stack">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="What should we call you?" autocomplete="name" required>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="password">Create a password</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+          <button class="button button-primary button-full" type="submit">Create my account <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+        <p class="auth-switch">Already have an account? <a href="/">Sign in <span>→</span></a></p>
+        <div class="auth-footnote"><span>✳</span> Good conversations start with a hello.</div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

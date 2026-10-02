@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f5fb">
+  <title>Your feed — SocialConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="feed-page">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/feed.html"><span class="brand-mark">✳</span> social<span>connect</span></a>
+      <nav class="top-nav" aria-label="Main navigation"><a class="nav-active" href="/feed.html"><span>⌂</span> Feed</a><a href="#createPost"><span>✎</span> Create</a></nav>
+      <div class="top-user"><div class="avatar avatar-small" id="userAvatar">S</div><span id="currentUser">Friend</span><button class="logout-button" onclick="logout()" type="button">Log out <span>↗</span></button></div>
+    </div>
+  </header>
+  <main class="feed-layout">
+    <aside class="feed-sidebar">
+      <div class="welcome-card"><div class="welcome-orb">✳</div><span class="eyebrow eyebrow-purple">A LITTLE SPACE TO SHARE</span><h2>Make today<br>a little more <em>connected.</em></h2><p>Drop a thought, celebrate a win, or just say hi.</p><a href="#createPost" class="text-link">Start a post <span>→</span></a></div>
+      <div class="sidebar-note"><span class="note-sparkle">✦</span><p>“The best part of the internet is finding your people.”</p><span class="note-label">A SOCIALCONNECT THOUGHT</span></div>
+    </aside>
+    <section class="feed-main" aria-label="Your social feed">
+      <div class="feed-heading"><div><span class="eyebrow eyebrow-purple">YOUR COMMUNITY</span><h1>The feed <span class="heading-sparkle">✦</span></h1><p>Good things are happening around you.</p></div><div class="feed-live"><span class="live-dot"></span> LIVE & OPEN</div></div>
+      <section class="composer" id="createPost">
+        <div class="composer-top"><div class="avatar avatar-gradient" id="composerAvatar">S</div><div><strong id="composerName">Share something</strong><span>Your people are listening</span></div><span class="composer-spark">✦</span></div>
+        <textarea id="postContent" maxlength="500" placeholder="What's on your mind today?" aria-label="Write a post"></textarea>
+        <div class="composer-bottom"><span class="composer-hint"><span>✳</span> Little moments welcome</span><div><span id="charCount" class="char-count">0 / 500</span><button class="button button-primary post-button" onclick="createPost()" type="button">Share post <span>↗</span></button></div></div>
+        <p id="postMessage" class="message" role="status" aria-live="polite"></p>
+      </section>
+      <div class="stream-heading"><h2>Latest conversations</h2><span>Fresh from your community <span>✦</span></span></div>
+      <div id="posts" class="post-list" aria-live="polite"><div class="loading-card"><span class="loading-orbit">✳</span> Gathering the good stuff…</div></div>
+    </section>
+  </main>
+  <footer class="feed-footer">Made for the moments in between <span>✳</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

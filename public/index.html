@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f3ff">
+  <title>SocialConnect — Find your people</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-story">
+      <a class="brand brand-light" href="/" aria-label="SocialConnect home"><span class="brand-mark">✳</span> social<span>connect</span></a>
+      <div class="story-copy">
+        <span class="eyebrow"><span class="live-dot"></span> YOUR PEOPLE, YOUR PLACE</span>
+        <h1>Good things<br>happen when<br><span>we connect.</span></h1>
+        <p>A little corner of the internet for big ideas, daily moments, and the people who get you.</p>
+        <div class="story-bubbles" aria-hidden="true"><span>✦</span><span>♡</span><span>↗</span><span>☺</span></div>
+        <p class="story-note">Made for sharing the little things.</p>
+      </div>
+      <div class="story-footer">A brighter kind of social.</div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-mobile-brand"><a class="brand" href="/"><span class="brand-mark">✳</span> social<span>connect</span></a></div>
+      <div class="auth-card">
+        <span class="eyebrow eyebrow-purple">WELCOME BACK</span>
+        <h2>Good to see you.</h2>
+        <p class="auth-intro">Pick up right where your people are.</p>
+        <form id="loginForm" class="form-stack">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your password" autocomplete="current-password" required>
+          <button class="button button-primary button-full" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+        <p class="auth-switch">New around here? <a href="/register.html">Create an account <span>→</span></a></p>
+        <div class="auth-footnote"><span>✳</span> Your next favorite conversation starts here.</div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
